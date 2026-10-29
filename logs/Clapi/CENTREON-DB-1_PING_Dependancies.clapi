@@ -1,6 +1,0 @@
-DEP;ADD;DEP_Centreon-DB-1_PING;DEP_Centreon-DB-1_PING;SERVICE;Centreon-DB-1,Ping
-DEP;SETPARAM;DEP_CENTREON-DB-1_PING;inherits_parent;1
-DEP;SETPARAM;DEP_CENTREON-DB-1_PING;execution_failure_criteria;w,u,c,p
-DEP;SETPARAM;DEP_CENTREON-DB-1_PING;notification_failure_criteria;w,u,c,p
-DEP;SETPARAM;DEP_CENTREON-DB-1_PING;dep_comment;Dependance sur le service PING.
-DEP;ADDCHILD;DEP_Centreon-DB-1_PING;Centreon-DB-1,OS-Linux-Process-snmpd-Status

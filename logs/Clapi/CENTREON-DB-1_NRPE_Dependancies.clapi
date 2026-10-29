@@ -1,5 +1,0 @@
-
-DEP;SETPARAM;DEP_CENTREON-DB-1_NRPE;inherits_parent;1
-DEP;SETPARAM;DEP_CENTREON-DB-1_NRPE;execution_failure_criteria;w,u,c,p
-DEP;SETPARAM;DEP_CENTREON-DB-1_NRPE;notification_failure_criteria;w,u,c,p
-DEP;SETPARAM;DEP_CENTREON-DB-1_NRPE;dep_comment;Dependance sur le service NRPE.

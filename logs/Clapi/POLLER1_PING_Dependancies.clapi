@@ -1,7 +1,0 @@
-DEP;ADD;DEP_Poller1_PING;DEP_Poller1_PING;SERVICE;Poller1,Ping
-
-DEP;SETPARAM;DEP_POLLER1_PING;inherits_parent;1
-DEP;SETPARAM;DEP_POLLER1_PING;execution_failure_criteria;w,u,c,p
-DEP;SETPARAM;DEP_POLLER1_PING;notification_failure_criteria;w,u,c,p
-DEP;SETPARAM;DEP_POLLER1_PING;dep_comment;Dependance sur le service PING.
-DEP;ADDCHILD;DEP_Poller1_PING;Poller1,OS-Linux-Process-snmpd-Status

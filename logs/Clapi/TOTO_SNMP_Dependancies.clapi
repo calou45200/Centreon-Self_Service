@@ -1,5 +1,0 @@
-
-DEP;SETPARAM;DEP_TOTO_SNMP;inherits_parent;1
-DEP;SETPARAM;DEP_TOTO_SNMP;execution_failure_criteria;w,u,c,p
-DEP;SETPARAM;DEP_TOTO_SNMP;notification_failure_criteria;w,u,c,p
-DEP;SETPARAM;DEP_TOTO_SNMP;dep_comment;Dependance sur le service SNMP.

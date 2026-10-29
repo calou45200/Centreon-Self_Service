@@ -1,6 +1,0 @@
-DEP;ADD;DEP_Zabbix_PING;DEP_Zabbix_PING;SERVICE;Zabbix,Ping
-DEP;SETPARAM;DEP_ZABBIX_PING;inherits_parent;1
-DEP;SETPARAM;DEP_ZABBIX_PING;execution_failure_criteria;w,u,c,p
-DEP;SETPARAM;DEP_ZABBIX_PING;notification_failure_criteria;w,u,c,p
-DEP;SETPARAM;DEP_ZABBIX_PING;dep_comment;Dependance sur le service PING.
-DEP;ADDCHILD;DEP_Zabbix_PING;Zabbix,OS-Linux-Process-snmpd-Status
