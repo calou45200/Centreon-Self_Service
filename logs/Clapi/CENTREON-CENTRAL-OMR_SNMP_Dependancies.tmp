@@ -1,0 +1,8 @@
+DEP;ADDCHILD;DEP_Centreon-Central-OMR_SNMP;Centreon-Central-OMR,OS-Linux-Disk-/home-Usage
+DEP;ADDCHILD;DEP_Centreon-Central-OMR_SNMP;Centreon-Central-OMR,OS-Linux-Disk-/-Usage
+DEP;ADDCHILD;DEP_Centreon-Central-OMR_SNMP;Centreon-Central-OMR,OS-Linux-Sys-CPU-Load
+DEP;ADDCHILD;DEP_Centreon-Central-OMR_SNMP;Centreon-Central-OMR,OS-Linux-Sys-Memory-Usage
+DEP;ADDCHILD;DEP_Centreon-Central-OMR_SNMP;Centreon-Central-OMR,OS-Linux-Sys-NTP-Status
+DEP;ADDCHILD;DEP_Centreon-Central-OMR_SNMP;Centreon-Central-OMR,OS-Linux-Sys-Swap-Usage
+DEP;ADDCHILD;DEP_Centreon-Central-OMR_SNMP;Centreon-Central-OMR,OS-Linux-Sys-Cpu-Detailed-Usage
+DEP;ADDCHILD;DEP_Centreon-Central-OMR_SNMP;Centreon-Central-OMR,OS-Linux-Sys-Uptime-Status

@@ -1,0 +1,17 @@
+DEP;ADD;DEP_Wordpress_SNMP;DEP_Wordpress_PING;SERVICE;Wordpress,OS-Linux-Process-snmpd-Status
+
+DEP;SETPARAM;DEP_WORDPRESS_SNMP;inherits_parent;1
+DEP;SETPARAM;DEP_WORDPRESS_SNMP;execution_failure_criteria;w,u,c,p
+DEP;SETPARAM;DEP_WORDPRESS_SNMP;notification_failure_criteria;w,u,c,p
+DEP;SETPARAM;DEP_WORDPRESS_SNMP;dep_comment;Dependance sur le service SNMP.
+DEP;ADDCHILD;DEP_Wordpress_SNMP;Wordpress,OS-Linux-Sys-CPU-Load
+DEP;ADDCHILD;DEP_Wordpress_SNMP;Wordpress,OS-Linux-Sys-Memory-Usage
+DEP;ADDCHILD;DEP_Wordpress_SNMP;Wordpress,OS-Linux-Sys-NTP-Status
+DEP;ADDCHILD;DEP_Wordpress_SNMP;Wordpress,OS-Linux-Process-crond-Status
+DEP;ADDCHILD;DEP_Wordpress_SNMP;Wordpress,OS-Linux-Sys-Swap-Usage
+DEP;ADDCHILD;DEP_Wordpress_SNMP;Wordpress,OS-Linux-Sys-Cpu-Detailed-Usage
+DEP;ADDCHILD;DEP_Wordpress_SNMP;Wordpress,OS-Linux-Sys-Uptime-Status
+DEP;ADDCHILD;DEP_Wordpress_SNMP;Wordpress,OS-Linux-Process-systemd-Status
+DEP;ADDCHILD;DEP_Wordpress_SNMP;Wordpress,OS-Linux-Process-sshd-Status
+DEP;ADDCHILD;DEP_Wordpress_SNMP;Wordpress,OS-Linux-Process-systemd-journal-Status
+DEP;ADDCHILD;DEP_Wordpress_SNMP;Wordpress,OS-Linux-Disk-/-Usage

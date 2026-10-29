@@ -1,0 +1,5 @@
+
+DEP;SETPARAM;DEP_CENTREON-CENTRAL-OMR_NRPE;inherits_parent;1
+DEP;SETPARAM;DEP_CENTREON-CENTRAL-OMR_NRPE;execution_failure_criteria;w,u,c,p
+DEP;SETPARAM;DEP_CENTREON-CENTRAL-OMR_NRPE;notification_failure_criteria;w,u,c,p
+DEP;SETPARAM;DEP_CENTREON-CENTRAL-OMR_NRPE;dep_comment;Dependance sur le service NRPE.

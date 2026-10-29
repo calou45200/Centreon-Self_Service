@@ -1,0 +1,3 @@
+HOST;setparam;azerty;address;192.168.125.125
+HOST;addtemplate;azerty;TH_App-Protocol-NTP
+HOST;applytpl;azerty

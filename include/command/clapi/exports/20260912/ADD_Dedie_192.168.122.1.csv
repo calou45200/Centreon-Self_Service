@@ -1,0 +1,3 @@
+HOST;ADD;Dedie;Serveur Proxmox;192.168.122.1;TH_OS-Linux-Debian-12-SNMP;Central;
+HOST;settemplate;Dedie;TH_OS-Linux-Debian-12-SNMP
+HOST;applytpl;Dedie

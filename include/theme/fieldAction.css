@@ -1,0 +1,20 @@
+/* fieldAction.css */
+fieldset {
+	width: 50%;
+	max-width: 400px;
+	height: auto;
+}
+
+.fieldAction div {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.fieldAction label {
+	color: black;
+}
+
+.fieldAction input[type="radio"]:checked+label {
+	color: green;
+}

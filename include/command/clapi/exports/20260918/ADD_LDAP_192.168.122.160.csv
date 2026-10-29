@@ -1,0 +1,3 @@
+HOST;ADD;LDAP;Serveur LDAP Communauté-omr.fr;192.168.122.160;TH_OS-Linux-Alma-9-SNMP;Central;
+HOST;settemplate;LDAP;TH_OS-Linux-Alma-9-SNMP
+HOST;applytpl;LDAP

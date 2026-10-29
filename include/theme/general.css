@@ -1,0 +1,8 @@
+/* Fichier general.php */
+.aligneTexteGras {
+	text-align: center;
+	font-weight: bold;
+}
+.popup-overlay {
+	z-index: 1000;
+}

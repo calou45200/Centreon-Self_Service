@@ -1,0 +1,12 @@
+/* popup.css */
+.cadre-popup {
+	border: 2px solid rgb(190, 190, 190);
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin: 10px 0;
+	background: linear-gradient(#f5f5f5, #dcdcdc);
+}
+
+.cadre-boutons {
+	text-align: center;
+}

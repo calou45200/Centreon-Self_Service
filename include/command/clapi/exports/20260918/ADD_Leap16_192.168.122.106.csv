@@ -1,0 +1,3 @@
+HOST;ADD;Leap16;Serveur Suse de test;192.168.122.106;TH_OS-Linux-SLES-16-SNMP;Central;
+HOST;settemplate;Leap16;TH_OS-Linux-SLES-16-SNMP
+HOST;applytpl;Leap16

@@ -1,0 +1,19 @@
+/* champs.css */
+.champ-nouveau {
+	color: blue;
+}
+
+.champ-modifie {
+	color: green;
+	font-weight: bold;
+}
+
+.template-supprime {
+	color: red;
+	text-decoration: line-through;
+}
+
+.template-ajoute {
+	color: green;
+	font-weight: bold;
+}

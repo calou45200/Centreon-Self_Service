@@ -1,0 +1,2 @@
+HOST;deltemplate;Centreon-DB-1;TH_App-DB-MySQL
+HOST;applytpl;Centreon-DB-1

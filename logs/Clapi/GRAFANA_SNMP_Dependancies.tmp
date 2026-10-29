@@ -1,0 +1,12 @@
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Sys-CPU-Load
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Sys-Memory-Usage
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Sys-NTP-Status
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Process-crond-Status
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Sys-Swap-Usage
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Sys-Cpu-Detailed-Usage
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Sys-Uptime-Status
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Process-systemd-Status
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Process-sshd-Status
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Process-systemd-journal-Status
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Process-systemd-journal-Status
+DEP;ADDCHILD;DEP_grafana_SNMP;grafana,OS-Linux-Disk-/-Usage

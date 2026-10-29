@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Bouton recherche animé -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barre de recherche extensible</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.08), transparent 35%),
+        linear-gradient(135deg, #0f1115, #171a21 45%, #111318);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 30px;
+    }
+
+    .search-wrapper {
+      position: relative;
+      width: 72px;
+      height: 72px;
+      transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .search-wrapper.active {
+      width: 380px;
+    }
+
+    .search-box {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+      transition:
+        background 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+    }
+
+    .search-wrapper.active .search-box,
+    .search-wrapper:hover .search-box {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.18);
+      box-shadow:
+        0 14px 40px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+    }
+
+    .search-btn {
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      transform: translateY(-50%);
+      width: 56px;
+      height: 56px;
+      border: none;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
+      box-shadow:
+        inset 0 1px 1px rgba(255,255,255,0.1),
+        0 6px 18px rgba(0,0,0,0.18);
+      transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+      z-index: 2;
+    }
+
+    .search-btn:hover {
+      transform: translateY(-50%) scale(1.04);
+      background: linear-gradient(145deg, rgba(255,255,255,0.16), rgba(255,255,255,0.06));
+    }
+
+    .search-btn:active {
+      transform: translateY(-50%) scale(0.98);
+    }
+
+    .search-btn svg {
+      width: 22px;
+      height: 22px;
+      stroke: #ffffff;
+      stroke-width: 2;
+      fill: none;
+      opacity: 0.95;
+    }
+
+    .search-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0 24px 0 82px;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease 0.12s;
+    }
+
+    .search-wrapper.active .search-input {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .search-input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .search-highlight {
+      position: absolute;
+      inset: 1px;
+      border-radius: 999px;
+      pointer-events: none;
+      background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.12),
+        rgba(255,255,255,0.03) 30%,
+        rgba(255,255,255,0.02) 70%,
+        rgba(255,255,255,0.08)
+      );
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.4));
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.4));
+    }
+
+    .search-wrapper.active::after {
+      content: "";
+      position: absolute;
+      inset: -6px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 65%);
+      z-index: -1;
+      filter: blur(10px);
+      opacity: 1;
+      animation: pulseGlow 2.4s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        opacity: 0.45;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.75;
+        transform: scale(1.02);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .search-wrapper.active {
+        width: 100%;
+        max-width: 320px;
+      }
+
+      body {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="search-wrapper" id="searchWrapper">
+    <div class="search-box">
+      <div class="search-highlight"></div>
+
+      <button class="search-btn" id="searchBtn" aria-label="Ouvrir la recherche">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="M20 20l-3.5-3.5"></path>
+        </svg>
+      </button>
+
+      <input
+        type="text"
+        class="search-input"
+        id="searchInput"
+        placeholder="Rechercher..."
+        aria-label="Champ de recherche"
+      />
+    </div>
+  </div>
+
+  <script>
+    const searchWrapper = document.getElementById("searchWrapper");
+    const searchBtn = document.getElementById("searchBtn");
+    const searchInput = document.getElementById("searchInput");
+
+    searchBtn.addEventListener("click", () => {
+      const isActive = searchWrapper.classList.contains("active");
+
+      if (!isActive) {
+        searchWrapper.classList.add("active");
+        setTimeout(() => searchInput.focus(), 220);
+      } else if (searchInput.value.trim() === "") {
+        searchWrapper.classList.remove("active");
+      } else {
+        console.log("Recherche :", searchInput.value);
+      }
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!searchWrapper.contains(e.target) && searchInput.value.trim() === "") {
+        searchWrapper.classList.remove("active");
+      }
+    });
+
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && searchInput.value.trim() === "") {
+        searchWrapper.classList.remove("active");
+      }
+    });
+  </script>
+
+</body>
+</html>

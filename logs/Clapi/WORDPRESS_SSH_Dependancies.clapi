@@ -1,0 +1,6 @@
+
+DEP;SETPARAM;DEP_WORDPRESS_SSH;inherits_parent;1
+DEP;SETPARAM;DEP_WORDPRESS_SSH;execution_failure_criteria;w,u,c,p
+DEP;SETPARAM;DEP_WORDPRESS_SSH;notification_failure_criteria;w,u,c,p
+DEP;SETPARAM;DEP_WORDPRESS_SSH;dep_comment;Dependance sur le service SSH.
+

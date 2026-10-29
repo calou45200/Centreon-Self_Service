@@ -1,0 +1,14 @@
+table.Table_Centre {
+	border-collapse: collapse;
+	table-layout: auto;
+	margin: 0 auto;
+}
+
+td.border, th.border {
+	border: 2px solid rgb(190, 190, 190);
+	padding: 10px 20px;
+}
+
+td.Notemplate {
+	vertical-align: top;
+}

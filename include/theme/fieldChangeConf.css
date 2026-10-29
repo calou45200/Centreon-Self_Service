@@ -1,0 +1,8 @@
+/* fieldChangeConf.css */
+.fieldChangeConf label {
+	color: black;
+}
+
+.fieldChangeConf input[type="radio"]:checked+label {
+	color: green;
+}

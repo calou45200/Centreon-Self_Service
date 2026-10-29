@@ -1,0 +1,4 @@
+HOST;setparam;Central-OMR web;alias;Central-OMR Fomulaire
+HOST;addtemplate;Central-OMR web;TH_App-Protocol-HTTP
+HOST;applytpl;Central-OMR web
+HOST;setparam;Central-OMR web;name;Central-OMR

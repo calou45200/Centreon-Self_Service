@@ -1,0 +1,2 @@
+HOST;addtemplate;Centreon-DB-1;TH_App-Apache-Cxf-Jmx
+HOST;applytpl;Centreon-DB-1

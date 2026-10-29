@@ -1,0 +1,3 @@
+HOST;ADD;Poller;Poller de supervision Centreon;192.168.122.120;TH_OS-Linux-Alma-9-SNMP;Central;
+HOST;settemplate;Poller;TH_OS-Linux-Alma-9-SNMP
+HOST;applytpl;Poller

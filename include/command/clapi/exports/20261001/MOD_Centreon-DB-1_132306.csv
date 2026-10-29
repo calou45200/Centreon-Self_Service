@@ -1,0 +1,2 @@
+HOST;addtemplate;Centreon-DB-1;TH_App-Cisco-Cms-Restapi
+HOST;applytpl;Centreon-DB-1

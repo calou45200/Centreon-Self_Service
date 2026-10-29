@@ -1,0 +1,3 @@
+HOST;deltemplate;Centreon-Central-OMR;TH_OS-Linux-SNMP
+HOST;addtemplate;Centreon-Central-OMR;TH_OS-Linux-Alma-9-SNMP
+HOST;applytpl;Centreon-Central-OMR

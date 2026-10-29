@@ -1,0 +1,3 @@
+HOST;addtemplate;popo;TH_App-Protocol-SNMP
+HOST;addtemplate;popo;TH_App-Protocol-Ssh
+HOST;applytpl;popo

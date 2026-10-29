@@ -1,0 +1,5 @@
+
+DEP;SETPARAM;DEP_DEDIE_NRPE;inherits_parent;1
+DEP;SETPARAM;DEP_DEDIE_NRPE;execution_failure_criteria;w,u,c,p
+DEP;SETPARAM;DEP_DEDIE_NRPE;notification_failure_criteria;w,u,c,p
+DEP;SETPARAM;DEP_DEDIE_NRPE;dep_comment;Dependance sur le service NRPE.

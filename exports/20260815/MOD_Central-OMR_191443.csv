@@ -1,0 +1,4 @@
+HOST;setparam;Central-OMR;alias;Central-OMR clapi
+HOST;addtemplate;Central-OMR;TH_App-Monitoring-Centreon-Central-SNMP
+HOST;addtemplate;Central-OMR;TH_App-Monitoring-Centreon-Central-HTML
+HOST;applytpl;Central-OMR
