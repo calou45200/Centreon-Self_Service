@@ -1,3 +1,0 @@
-HOST;ADD;Centreon-DB-1;Base Principale Centreon;192.168.122.111;TH_OS-Linux-Alma-9-SNMP;Central;
-HOST;settemplate;Centreon-DB-1;TH_OS-Linux-Alma-9-SNMP
-HOST;applytpl;Centreon-DB-1

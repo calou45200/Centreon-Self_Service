@@ -1,3 +1,0 @@
-HOST;ADD;grafana;Metrologie OMR;192.168.122.140;TH_OS-Linux-Alma-9-SNMP;Central;
-HOST;settemplate;grafana;TH_OS-Linux-Alma-9-SNMP
-HOST;applytpl;grafana

@@ -1,3 +1,0 @@
-HOST;ADD;nbcv;nbcv;192.168.122.3;TH_App-Jvm-Centreon-Map-Engine;Central;
-HOST;settemplate;nbcv;TH_App-Jvm-Centreon-Map-Engine
-HOST;applytpl;nbcv
