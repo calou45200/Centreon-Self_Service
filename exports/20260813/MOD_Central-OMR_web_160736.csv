@@ -1,5 +1,0 @@
-HOST;setparam;Central-OMR web;alias;Central-OMR 
-HOST;setparam;Central-OMR web;address;192.168.122.110
-HOST;deltemplate;Central-OMR web;TH_App-Monitoring-Centreon-MBI-SNMP
-HOST;applytpl;Central-OMR web
-HOST;setparam;Central-OMR web;name;Central-OMR 

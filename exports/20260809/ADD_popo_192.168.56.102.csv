@@ -1,3 +1,0 @@
-HOST;ADD;popo;popo;192.168.56.102;TH_App-Monitoring-Centreon-Central-SNMP;Central;
-HOST;settemplate;popo;TH_App-Monitoring-Centreon-Central-SNMP
-HOST;applytpl;popo

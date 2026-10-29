@@ -1,4 +1,0 @@
-HOST;setparam;Central-OMR web;alias;Central-OMR Fomulaire
-HOST;deltemplate;Central-OMR web;TH_App-Monitoring-Centreon-MBI-SNMP
-HOST;applytpl;Central-OMR web
-HOST;setparam;Central-OMR web;name;Central-OMR

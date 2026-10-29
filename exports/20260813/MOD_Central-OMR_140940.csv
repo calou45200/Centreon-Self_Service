@@ -1,6 +1,0 @@
-HOST;setparam;Central-OMR;alias;Central-OMR Fom
-HOST;setparam;Central-OMR;address;192.168.122.111
-HOST;deltemplate;Central-OMR;TH_App-Webserver-Apache-ServerStatus
-HOST;addtemplate;Central-OMR;TH_App-Monitoring-Centreon-MBI-SNMP
-HOST;applytpl;Central-OMR
-HOST;setparam;Central-OMR;name;Central-OMR web

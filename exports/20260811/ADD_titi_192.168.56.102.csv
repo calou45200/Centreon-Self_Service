@@ -1,3 +1,0 @@
-HOST;ADD;titi;titi;192.168.56.102;TH_OS-Linux-RedHat-8-SNMP;Central;
-HOST;settemplate;titi;TH_OS-Linux-RedHat-8-SNMP
-HOST;applytpl;titi

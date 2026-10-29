@@ -1,4 +1,0 @@
-HOST;setparam;popo;alias;popo mut
-HOST;setparam;popo;address;192.168.56.120
-HOST;addtemplate;popo;TH_App-Webserver-Apache-ServerStatus
-HOST;applytpl;popo
