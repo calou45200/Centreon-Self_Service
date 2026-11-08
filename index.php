@@ -3,7 +3,7 @@
     // ini_set('display_errors', 1);
     // error_reporting(E_ALL);
 	// a supprimer en prod dans /usr/share/centreon/www/souscription 
-    //test github
+    //test github2
 
 	require_once __DIR__ . '/config.php';
     $cheminImage = BASE_URL . '/Image/' . $LogoName;
